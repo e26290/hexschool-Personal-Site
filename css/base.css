@@ -1,0 +1,58 @@
+@charset "UTF-8";
+@import "font.css";
+@import "color.css";
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap");
+:root {
+  font-family: "Inter", "Noto Sans TC", Helvetica, Arial, 微軟正黑體, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: var(--md);
+  color-scheme: light dark;
+  color: black;
+  background-color: #ccc;
+  box-sizing: border-box;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*::after, *::before {
+  border: solid 1px black;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+.nav .nav-item {
+  color: black;
+  background-color: white;
+  font-weight: var(--b);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.875rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.nav .nav-item:hover {
+  filter: brightness(110%);
+}
+.nav .nav-item svg {
+  stroke: black;
+  width: var(--ism);
+}
+
+footer {
+  padding: 1rem 0;
+  border-top: solid 1px black;
+}
+footer p {
+  text-align: center;
+}/*# sourceMappingURL=base.css.map */

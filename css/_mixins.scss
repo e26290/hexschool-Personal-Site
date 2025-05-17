@@ -1,0 +1,50 @@
+// flex 排列
+@mixin flex($j: center, $a: center, $d: row, $g: 1.5rem) {
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+    flex-direction: $d;
+    gap: $g;
+}
+
+// 斷點
+@mixin breakpoint($size) {
+    @media (max-width: $size) {
+        @content;
+    }
+}
+
+// 文字斷行
+@mixin textOver($c:4) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $c;
+    -webkit-box-orient: vertical;
+}
+
+// 圖片在div內置中
+@mixin imgCover($url, $pos:center) {
+    background-image: url($url);
+    background-position: $pos;
+    background-size: cover;
+}
+
+// 按鈕樣式
+@mixin button($fontc, $bgc, $fw:500) {
+    color: $fontc;
+    background-color: $bgc;
+    font-weight: $fw;
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.875rem;
+    @include flex($g: 0.5rem);
+
+    &:hover {
+        filter: brightness(110%);
+    }
+
+    svg {
+        stroke: $fontc;
+        width: var(--ism);
+    }
+}

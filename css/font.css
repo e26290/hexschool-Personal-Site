@@ -1,0 +1,45 @@
+:root {
+    /* weight */
+    --b: 700;
+    --m: 500;
+    --r: 400;
+
+    /* font-size */
+    --display: 7.5rem;
+    --xl5: 3rem;
+    --xl4: 2rem;
+    --xl3: 1.75rem;
+    --xl2: 1.5rem;
+    --xl: 1.25rem;
+    --lg: 1.125rem;
+    --md: 1rem;
+    --sm: 0.875rem;
+    --xs: 0.75rem;
+
+    /* icon-size */
+    --ixs: 1rem;
+    --ism: 1.25rem;
+}
+
+/* @media (max-width: 1024px) {
+    :root {
+        --display: 3rem;
+    }
+} */
+
+@media (max-width: 767px) {
+    :root {
+        --display: 3.25rem;
+        --xl5: 2rem;
+        --xl4: 1.75rem;
+        --xl3: 1.5rem;
+        --xl2: 1.25rem;
+        --xl: 1.125rem;
+        --lg: 1rem;
+        --md: 0.875rem;
+        --sm: 0.875rem;
+        --xs: 0.75rem;
+
+        --ism: 1rem;
+    }
+}

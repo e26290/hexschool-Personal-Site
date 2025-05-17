@@ -1,0 +1,58 @@
+html,
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        color: inherit;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: var(--xl5);
+}
+
+h2 {
+    font-size: var(--xl4);
+}
+
+h3 {
+    font-size: var(--xl3);
+}
+
+h4 {
+    font-size: var(--xl2);
+}
+
+h5 {
+    font-size: var(--xl);
+}
+
+h6 {
+    font-size: var(--lg);
+}

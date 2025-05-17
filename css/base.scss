@@ -1,0 +1,50 @@
+@import "_mixins.scss";
+@import "font.css";
+@import "color.css";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+TC:wght@100..900&display=swap');
+
+:root {
+    font-family: "Inter", "Noto Sans TC", Helvetica, Arial, 微軟正黑體, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: var(--md);
+
+    color-scheme: light dark;
+    color: black;
+    background-color: #ccc;
+
+    box-sizing: border-box;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    // border: solid 1px black;
+
+    &::after,
+    &::before {
+        border: solid 1px black;
+    }
+}
+
+// components
+.nav {
+    @include flex;
+    padding: 1rem 0;
+
+    .nav-item {
+        @include button(black, white, var(--b));
+    }
+}
+
+footer {
+    padding: 1rem 0;
+    border-top: solid 1px black;
+
+    p {
+        text-align: center;
+    }
+}
