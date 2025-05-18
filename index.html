@@ -8,7 +8,7 @@
     <!-- <link rel="icon" href="images/favicon.ico" type="image/x-icon"> -->
     <meta name="description" content="Alyse Wang 的個人品牌網站，展示我的專業技能和經歷。">
     <!-- 套件 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
     <!-- css -->
@@ -19,8 +19,137 @@
 
 <body>
     <header id="header-container"></header>
+    <div class="banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pic col-md-6 col-sm-12 p-0">
+                    <img src="images/hero-pic.png" alt="個人形象照">
+                </div>
+                <div class="info col-md-6 col-sm-12 p-0">
+                    <img src="images/hero-info-bg.png" alt="hero-info-bg">
+                    <div class="text">
+                        <h1 class="display-name">Alyse Wang</h1>
+                        <h4 class="job-title">前端工程師 & 職涯諮詢師</h4>
+                    </div>
+                </div>
+                <div class="about col-md-6 col-sm-12">
+                    <p>嗨，我是 Alyse 一名深耕前端技術的工程師。</p>
+                    <p>擅長 React、Vue 等框架，同時熱愛為轉職與新手工程師提供職涯指導。邀請你與我一起，開啟更具潛能的程式與職涯之旅！</p>
+                    <ul class="cta-media">
+                        <li><a href="/" class="cta-item"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="/" class="cta-item"><i class="fa-solid fa-podcast"></i></a></li>
+                        <li><a href="/" class="cta-item"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="/" class="cta-item"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a href="/" class="cta-item"><i class="fa-brands fa-square-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
 
-    <footer id="footer-container"></div>
+        </div>
+
+    </div>
+    <div class="service-plan section-padding">
+        <div class="container warp">
+            <h2 class="section-title">專業服務與方案</h2>
+            <div class="content">
+                <div class="service-card">
+                    <img src="images/service-1.png" alt="履歷健檢示意圖">
+                    <div class="text">
+                        <h3>履歷健檢</h3>
+                        <p>履歷是打開機會之門的第一步。讓我協助你突顯專業技術與核心能力，並透過簡短模擬面試為你加分，讓面試官第一眼就被你吸引。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-2.png" alt="線上諮詢示意圖">
+                    <div class="text">
+                        <h3>線上諮詢</h3>
+                        <p>想快速解決前端學習瓶頸，或需要專業職涯指引？透過線上一對一諮詢，我將協助你更有方向地邁進。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+
+                    <img src="images/service-3.png" alt="網頁開發示意圖">
+                    <div class="text">
+                        <h3>網頁開發</h3>
+                        <p>想打造高效能、具美感的網站？我提供從需求訪談到架構實作的一站式服務，讓你的品牌與產品在線上脫穎而出。</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <img src="images/service-4.png" alt="企業內訓示意圖">
+                    <div class="text">
+                        <h3>企業內訓</h3>
+                        <p>想讓團隊快速掌握前端最新技術或優化現有專案流程？我可協助打造專業、實用的企業內訓課程，一次解決團隊痛點。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="more">
+                <span>聯繫我，取得更多資訊！</span>
+                <div class="icon">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="blog-carousel section-padding">
+        <div class="container">
+            <h2 class="section-title">部落格精選</h2>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/blog-1.png" class="d-block w-100" alt="自學前端不用怕：從零開始的三大關鍵">
+                        <div class="text">
+                            <span class="date">2024/10/21</span>
+                            <div class="tag">
+                                <span>前端開發 x 職涯成長</span>
+                                <div class="tag-state">最新文章</div>
+                            </div>
+                            <h3>自學前端不用怕：從零開始的三大關鍵</h3>
+                            <p>嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」 其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！</p>
+                            <button>閱讀內文</button>
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/blog-2.png" class="d-block w-100" alt="前端面試不再慌：破解常見提問的三大策略">
+                        <div class="text">
+                            <span class="date">2024/07/08</span>
+                            <div class="tag">
+                                <span>#面試準備 #工程師求職</span>
+                                <div class="tag-state">人氣文章</div>
+                            </div>
+                            <h3>前端面試不再慌：破解常見提問的三大策略</h3>
+                            <p>面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。</p>
+                            <button>閱讀內文</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/blog-3.png" class="d-block w-100" alt="CSS 魔法大揭密：排版與設計的三大關鍵技巧">
+                        <div class="text">
+                            <span class="date">22024/09/03</span>
+                            <div class="tag">
+                                <span>#CSS設計 #視覺體驗</span>
+                            </div>
+                            <h3>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h3>
+                            <p>在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭 CSS，打造兼具美感與功能性的網頁。</p>
+                            <button>閱讀內文</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <footer id="footer-container"></footer>
 
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
@@ -36,6 +165,12 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header-container').innerHTML = data;
+            });
+
+        fetch('components/cta.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('cta-container').innerHTML = data;
             });
 
         fetch('components/footer.html')

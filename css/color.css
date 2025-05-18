@@ -1,6 +1,7 @@
 :root {
     /* blue */
     --brand: hsl(230, 100%, 40%);
+    --brand-90: hsl(230, 100%, 90%);
 
     /* natural */
     --natural-30: hsl(0, 0%, 30%);
