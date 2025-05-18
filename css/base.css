@@ -17,11 +17,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  border: solid 1px black;
-}
 .section-padding {
-  padding: 3rem 0;
+  padding: 5rem 0;
 }
 @media (max-width: 768px) {
   .section-padding {
@@ -31,6 +28,7 @@
 .section-padding .section-title {
   text-align: left;
   font-weight: var(--b);
+  margin-bottom: 2rem;
 }
 
 header .nav {
@@ -190,7 +188,7 @@ footer p {
   justify-content: center;
   align-items: stretch;
   flex-direction: column;
-  gap: 2rem;
+  gap: 0;
 }
 .service-plan .warp .content {
   display: flex;
@@ -242,6 +240,7 @@ footer p {
   flex-direction: row;
   gap: 0.5rem;
   transition: all 0.3s ease-out;
+  margin-top: 2rem;
 }
 .service-plan .more .icon {
   display: flex;
@@ -264,6 +263,191 @@ footer p {
   color: white;
 }
 
-.blog-carousel .carousel-item {
-  width: 33%;
+#blog-carousel {
+  border-top: solid 1px black;
+  border-bottom: solid 1px black;
+}
+#blog-carousel .slider-container {
+  width: 100%;
+}
+#blog-carousel .slick-slider .slick-list {
+  transform: translateX(12px);
+}
+#blog-carousel .slide {
+  background-color: #f0f0f0;
+  text-align: center;
+  margin-left: 1.5rem;
+}
+#blog-carousel .slide:first-child {
+  margin-left: 0;
+}
+#blog-carousel .slide img {
+  width: 100%;
+  height: auto;
+}
+#blog-carousel .slide .text {
+  padding: 20px;
+  text-align: left;
+}
+#blog-carousel .slide .tag {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+}
+#blog-carousel .slide .tag span {
+  font-size: var(--lg);
+  font-weight: var(--m);
+  color: var(--brand);
+}
+#blog-carousel .slide .tag .tag-state {
+  font-size: var(--sm);
+  font-weight: var(--m);
+  color: white;
+  background-color: var(--brand);
+  padding: 0.25rem 0.875rem;
+  border-radius: 2rem;
+}
+#blog-carousel .slick-next {
+  right: -20px;
+  z-index: 9;
+}
+#blog-carousel .slick-prev {
+  left: -48px;
+  z-index: 9;
+}
+#blog-carousel .slick-prev:before,
+#blog-carousel .slick-next:before {
+  font-family: "slick";
+  font-size: 1.5rem;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--brand);
+  border-radius: 50%;
+  padding: 0.75rem;
+}
+#blog-carousel .slick-prev:before {
+  content: "⭠";
+}
+#blog-carousel .slick-next:before {
+  content: "⭢";
+}
+#blog-carousel .slide .text h3 {
+  font-weight: var(--b);
+}
+#blog-carousel .slide .text p {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0.875rem;
+}
+
+.case .pic img {
+  width: 100%;
+  border: solid 1.5rem var(--natural-95);
+  height: auto;
+}
+.case .info .text {
+  padding: 3rem 2.5rem;
+  padding-top: 5rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.case .info .text-1 {
+  transform: translate(-8rem, 4rem);
+}
+.case .info .text-2 {
+  transform: translate(0, 2rem);
+  background-color: var(--natural-95);
+}
+.case .info .text p::before {
+  content: "";
+  margin-bottom: 1.5rem;
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background-color: var(--brand);
+}
+.case .feedback {
+  background-color: var(--natural-95);
+  margin-top: 2rem;
+  padding: 1.5rem;
+}
+.case .feedback-card {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.case .feedback-card img {
+  width: 4rem;
+  height: 4rem;
+}
+.case .feedback-card .text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px black;
+}
+.case .feedback-card i {
+  color: var(--brand);
+}
+
+.subscribe .pic {
+  overflow: hidden;
+}
+.subscribe .text {
+  background-color: white;
+  padding: 3rem 2.5rem;
+}
+.subscribe .text h2 {
+  font-weight: var(--b);
+}
+.subscribe .text h6 b {
+  color: var(--brand);
+}
+
+.contact-me .list {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  border-bottom: solid 1px black;
+  transition: all 0.3s ease-out;
+}
+.contact-me .list:hover {
+  background-color: var(--brand-90);
+}
+.contact-me .list:hover p, .contact-me .list:hover i {
+  scale: 1.1;
+  color: var(--brand);
+}
+.contact-me .list .email {
+  text-decoration: underline;
+  font-weight: var(--b);
+}
+.contact-me .list p {
+  display: block;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+.contact-me .list .contact-list:nth-last-child(1) a {
+  border-bottom: none;
 }/*# sourceMappingURL=base.css.map */

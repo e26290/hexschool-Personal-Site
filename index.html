@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.min.css" />
     <!-- css -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
@@ -91,64 +95,220 @@
         </div>
 
     </div>
-    <div class="blog-carousel section-padding">
+    <div id="blog-carousel" class="section-padding">
         <div class="container">
             <h2 class="section-title">部落格精選</h2>
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/blog-1.png" class="d-block w-100" alt="自學前端不用怕：從零開始的三大關鍵">
-                        <div class="text">
-                            <span class="date">2024/10/21</span>
-                            <div class="tag">
-                                <span>前端開發 x 職涯成長</span>
-                                <div class="tag-state">最新文章</div>
-                            </div>
-                            <h3>自學前端不用怕：從零開始的三大關鍵</h3>
-                            <p>嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」 其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！</p>
-                            <button>閱讀內文</button>
+            <div class="slider-container">
+                <div class="slide">
+                    <img src="/images/blog-1.png" class="d-block w-100" alt="自學前端不用怕：從零開始的三大關鍵">
+                    <div class="text">
+                        <span class="date">2024/10/21</span>
+                        <div class="tag">
+                            <span>前端開發 x 職涯成長</span>
+                            <div class="tag-state">最新文章</div>
                         </div>
-
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/blog-2.png" class="d-block w-100" alt="前端面試不再慌：破解常見提問的三大策略">
-                        <div class="text">
-                            <span class="date">2024/07/08</span>
-                            <div class="tag">
-                                <span>#面試準備 #工程師求職</span>
-                                <div class="tag-state">人氣文章</div>
-                            </div>
-                            <h3>前端面試不再慌：破解常見提問的三大策略</h3>
-                            <p>面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。</p>
-                            <button>閱讀內文</button>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/blog-3.png" class="d-block w-100" alt="CSS 魔法大揭密：排版與設計的三大關鍵技巧">
-                        <div class="text">
-                            <span class="date">22024/09/03</span>
-                            <div class="tag">
-                                <span>#CSS設計 #視覺體驗</span>
-                            </div>
-                            <h3>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h3>
-                            <p>在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭 CSS，打造兼具美感與功能性的網頁。</p>
-                            <button>閱讀內文</button>
-                        </div>
+                        <h3>自學前端不用怕：從零開始的三大關鍵</h3>
+                        <p>嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+                            其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！</p>
+                        <button>閱讀內文</button>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                <div class="slide">
+                    <img src="/images/blog-2.png" class="d-block w-100" alt="前端面試不再慌：破解常見提問的三大策略">
+                    <div class="text">
+                        <span class="date">2024/07/08</span>
+                        <div class="tag">
+                            <span>#面試準備 #工程師求職</span>
+                            <div class="tag-state">人氣文章</div>
+                        </div>
+                        <h3>前端面試不再慌：破解常見提問的三大策略</h3>
+                        <p>面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。
+                        </p>
+                        <button>閱讀內文</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/images/blog-3.png" class="d-block w-100" alt="CSS 魔法大揭密：排版與設計的三大關鍵技巧">
+                    <div class="text">
+                        <span class="date">22024/09/03</span>
+                        <div class="tag">
+                            <span>#CSS設計 #視覺體驗</span>
+                        </div>
+                        <h3>CSS 魔法大揭密：排版與設計的三大關鍵技巧</h3>
+                        <p>在瀏覽器畫面上實現各種精美介面，一直是前端開發充滿成就感的部分。但當面臨複雜的佈局需求或是響應式設計時，往往讓人抓破頭皮。這篇文章想跟大家分享我在實務專案中累積的三大技巧，幫助你更有效率地駕馭
+                            CSS，打造兼具美感與功能性的網頁。</p>
+                        <button>閱讀內文</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/images/blog-1.png" class="d-block w-100" alt="自學前端不用怕：從零開始的三大關鍵">
+                    <div class="text">
+                        <span class="date">2024/10/21</span>
+                        <div class="tag">
+                            <span>前端開發 x 職涯成長</span>
+                            <div class="tag-state">最新文章</div>
+                        </div>
+                        <h3>自學前端不用怕：從零開始的三大關鍵</h3>
+                        <p>嗨，我是 Alyse，一名前端工程師兼職涯諮詢師。一直以來，我都很喜歡在部落格分享學習與工作心得，也常有讀者問：「我想轉職/自學前端，該從哪裡開始？」
+                            其實自學的過程既自由又具挑戰性。我整理了三大關鍵，幫助你在短期內建立紮實基礎，並快速累積實戰經驗。希望能替你的前端之路帶來一些啟發與動力！</p>
+                        <button>閱讀內文</button>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="/images/blog-2.png" class="d-block w-100" alt="前端面試不再慌：破解常見提問的三大策略">
+                    <div class="text">
+                        <span class="date">2024/07/08</span>
+                        <div class="tag">
+                            <span>#面試準備 #工程師求職</span>
+                            <div class="tag-state">人氣文章</div>
+                        </div>
+                        <h3>前端面試不再慌：破解常見提問的三大策略</h3>
+                        <p>面試前端工程師時，你或許擔心被問到各種刁鑽的技術題目，或是擔憂無法在短時間內展現實力。其實，許多面試官關注的重點並不僅是程式碼本身，更包含問題解決的流程與溝通能力。這篇文章將分享我在面試過程中常見的三大難題，以及如何以更具條理的方式回應，讓你在面試場合中脫穎而出。
+                        </p>
+                        <button>閱讀內文</button>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+    <div class="case section-padding">
+        <div class="container">
+            <h2 class="section-title">職涯諮詢成功案例</h2>
+            <div class="about">
+                <div class="row">
+                    <div class="pic col-md-6 col-sm-12">
+                        <img src="images/case-cover.png" alt="成功案例形象照">
+                    </div>
+                    <div class="info col-md-6 col-sm-12">
+                        <div class="text text-1">
+                            <p>在職涯發展的關鍵轉折點上，適時的協助與正確的方向至關重要。藉由職涯諮詢，我可以幫助你加速釐清目標、建立更全面的技術與軟實力，並有效 <b>突破原有的舒適圈。</b></p>
+                        </div>
+                        <div class="text text-2">
+                            <p>期待在下一個新機會中，我能與你一起攜手邁向更高峰！</p>
+                            <button>立即預約諮詢</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div class="row">
+                    <div class="feedback-card col-md-3 col-sm-12">
+                        <img src="images/feedback-1.png" alt="成功案例形象照">
+                        <div class="text">
+                            <h4>無經驗到前端工程師 Offer</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i> 打造前端專案與履歷亮點</li>
+                                <li><i class="fa-solid fa-square-check"></i> 深度強化面試表現</li>
+                            </ul>
+                        </div>
+                        <button>前往聆聽 podcast</button>
+                    </div>
+                    <div class="feedback-card col-md-3 col-sm-12">
+                        <img src="images/feedback-2.png" alt="成功案例形象照">
+                        <div class="text">
+                            <h4>轉職迷茫到明確學習規劃</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i> 制訂階段性目標與時間安排</li>
+                                <li><i class="fa-solid fa-square-check"></i> 鼓勵參與前端社群或活動</li>
+                            </ul>
+                        </div>
+                        <button>前往聆聽 podcast</button>
+                    </div>
+                    <div class="feedback-card col-md-3 col-sm-12">
+                        <img src="images/feedback-3.png" alt="成功案例形象照">
+                        <div class="text">
+                            <h4>面試緊張到從容應對</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i> 透過面試模擬找出常犯的邏輯漏洞</li>
+                                <li><i class="fa-solid fa-square-check"></i> 討論遇到不熟悉議題時的回應方式</li>
+                            </ul>
+                        </div>
+                        <button>前往聆聽 podcast</button>
+                    </div>
+                    <div class="feedback-card col-md-3 col-sm-12">
+                        <img src="images/feedback-4.png" alt="成功案例形象照">
+                        <div class="text">
+                            <h4>面試緊張到從容應對</h4>
+                            <ul>
+                                <li><i class="fa-solid fa-square-check"></i> 擬定進階框架或技術研究目標</li>
+                                <li><i class="fa-solid fa-square-check"></i> 培養跨團隊溝通與簡報能力</li>
+                            </ul>
+                        </div>
+                        <button>前往聆聽 podcast</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="subscribe banner">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="pic col-md-6 col-sm-12 p-0">
+                    <img src="images/subscribe-pic.png" alt="個人形象照">
+                </div>
+                <div class="info col-md-6 col-sm-12 p-0">
+                    <img src="images/hero-info-bg.png" alt="hero-info-bg">
+                    <div class="text">
+                        <h2>訂閱電子報</h2>
+                        <h6>立即訂閱，搶先掌握<b>前端 x 職涯</b>的獨家資訊！</h6>
+                        <input type="text" placeholder="請輸入您的大名">
+                        <input type="text" placeholder="請輸入您的電子信箱">
+                        <button type="submit">啟動訂閱</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="contact-me section-padding">
+        <div class="container">
+            <h2 class="section-title">與我聯繫</h2>
+            <ul>
+                <li class="contact-list">
+                    <a href="/" class="list">
+                        <p><span class="email">alysewang@hexschool.com</span>合作洽談</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                </li>
+                <li class="contact-list">
+                    <a href="/" class="list">
+                        <p><i class="fa-brands fa-youtube"></i>Youtube 職涯諮詢室</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="contact-list">
+                    <a href="/" class="list">
+                        <p><i class="fa-solid fa-podcast"></i>podcast 職涯諮詢室</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="contact-list">
+                    <a href="/" class="list">
+                        <p><i class="fa-brands fa-facebook"></i>Facebook 前端社群</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="contact-list">
+                    <a href="/" class="list">
+                        <p><i class="fa-brands fa-linkedin"></i>linkedin 職涯交流</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+                <li class="contact-list">
+                    <a href="/" class="list">
+                        <p><i class="fa-brands fa-square-instagram"></i>Instagram 日常分享</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
     <footer id="footer-container"></footer>
 
     <!-- JS -->
@@ -167,17 +327,25 @@
                 document.getElementById('header-container').innerHTML = data;
             });
 
-        fetch('components/cta.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('cta-container').innerHTML = data;
-            });
-
         fetch('components/footer.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('footer-container').innerHTML = data;
             });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.slider-container').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+            });
+        });
+
     </script>
 </body>
 
