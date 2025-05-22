@@ -1,1 +1,144 @@
 @import "_mixins.scss";
+
+.blog-slide {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    overflow: hidden;
+
+    .blog-content {
+        @include flex($j: center, $a: center);
+    }
+
+    .text {
+        max-width: 640px;
+        padding: 3rem;
+    }
+
+    @include breakpoint(576px) {
+        .text {
+            padding: 3rem 0.75rem;
+        }
+    }
+
+    .tag {
+        @include flex($j: flex-start, $a: center, $g: 0.5rem);
+        margin-bottom: 10px;
+
+        span {
+            font-size: var(--lg);
+            font-weight: var(--m);
+            color: var(--brand);
+        }
+
+        .tag-state {
+            font-size: var(--sm);
+            font-weight: var(--m);
+            color: white;
+            background-color: var(--brand);
+            padding: 0.25rem 0.875rem;
+            border-radius: 2rem;
+            white-space: nowrap;
+        }
+    }
+
+    @include breakpoint(1024px) {
+        .tag {
+            height: 45px;
+            line-height: 120%;
+        }
+    }
+
+    .slide .text h3 {
+        font-weight: var(--b);
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .slide .text p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        margin-top: 0.875rem;
+    }
+}
+
+.warp {
+    @include flex;
+    border-bottom: solid 1px black;
+
+    .content {
+        @include flex($a: stretch, $g: 3rem, $d: column);
+        max-width: 960px;
+
+        .section-title,
+        b,
+        a {
+            color: var(--brand);
+            margin: 1.5rem 0;
+            font-weight: var(--b);
+        }
+
+        img {
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+
+        
+
+        .group {
+            @include flex($a: flex-start, $g: 1rem, $d: column);
+            margin: 1.5rem 0;
+            font-weight: var(--m);
+
+            .item {
+                @include flex;
+                padding: 0.5rem 1rem;
+                border-radius: 1rem;
+                background-color: var(--natural-95);
+                color: var(--natural-75);
+                font-size: var(--sm);
+                font-weight: var(--m);
+            }
+        }
+
+        li {
+            counter-increment: custom-counter;
+            position: relative;
+            padding-left: 2em;
+
+            &::before {
+                content: counter(custom-counter) ".";
+                position: absolute;
+                left: 0;
+                top: 0;
+            }
+        }
+        .tips {
+            padding: 1.5rem;
+            border-radius: 1rem;
+            background-color: var(--natural-95);
+            width: 100%;
+            font-weight: var(--b);
+        }
+
+        .btns {
+            @include flex($j: space-between);
+        }
+
+    }
+
+    kbd {
+        display: inline-block;
+        padding: 0.15em 0.5em;
+        font-size: var(--sm);
+        color: black;
+        background: var(--natural-95);
+        border: solid 1px var(--natural-75);
+        border-radius: 4px;
+        box-shadow: 0 1px 0 var(--natural-75);
+    }
+}

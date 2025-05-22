@@ -5,6 +5,7 @@
 
     /* natural */
     --natural-30: hsl(0, 0%, 30%);
+    --natural-75: hsl(0, 0%, 75%);
     --natural-90: hsl(0, 0%, 90%);
     --natural-95: hsl(0, 0%, 95%);
 }
