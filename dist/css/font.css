@@ -21,11 +21,11 @@
     --ism: 1.25rem;
 }
 
-/* @media (max-width: 1024px) {
+@media (max-width: 1024px) {
     :root {
         --display: 3rem;
     }
-} */
+}
 
 @media (max-width: 767px) {
     :root {
