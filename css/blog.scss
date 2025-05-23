@@ -2,27 +2,42 @@
 
 .warp {
     .blog-search-form {
-        @include flex($j: center, $a: center);
-        margin-bottom: 2rem;
-
-        input {
-            width: 100%;
-            padding: 0.5rem 1rem;
-            border-radius: 0.5rem;
-            border: solid 1px var(--brand);
-            font-size: var(--lg);
-            font-weight: var(--m);
-            color: var(--brand);
-            background-color: white;
+        .input-group {
+            @include flex($j: flex-start, $a: center, $g: 0.25rem);
+            border: solid 1px black;
+            border-radius: 100px;
+            padding: 0.25rem 1rem;
+            max-width: 400px;
+            margin-bottom: 2rem;
         }
 
-        button {
-            @include button(black, white, var(--b));
+        input {
+            padding: 0.5rem 1rem;
+            border: none;
         }
     }
 
     .blog-pagination {
         margin-top: 2rem;
+
+        .page-link {
+            color: black;
+            background-color: white;
+            border: 1px solid #dee2e6;
+            text-align: center;
+            transition: all 0.2s, color 0.2s;
+        }
+
+        .page-item.active .page-link {
+            background-color: var(--brand);
+            color: white;
+            border-color: var(--brand);
+        }
+
+        .page-link:hover {
+            background-color: var(--brand);
+            color: white;
+        }
     }
 
     .card {
@@ -35,7 +50,7 @@
         }
 
         .text {
-            padding: 20px 0;
+            padding: 1.25rem 0 3rem;
             text-align: left;
         }
 
@@ -70,7 +85,8 @@
             -webkit-line-clamp: 3;
             -webkit-box-orient: vertical;
             overflow: hidden;
-            margin-top: 0.875rem;
+            margin: 0.875rem 0 1rem 0;
+
         }
     }
 }

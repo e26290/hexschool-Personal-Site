@@ -45,6 +45,7 @@ header .nav .nav-item {
   font-weight: var(--b);
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem 0.5rem 0.875rem;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -86,6 +87,7 @@ header .nav .nav-item svg {
   font-weight: 500;
   border-radius: 0.5rem;
   padding: 0.5rem 0.75rem 0.5rem 0.875rem;
+  border: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -266,4 +268,33 @@ footer p {
 .blog-slide .text p {
   display: -webkit-box;
   margin: 1rem 0;
+}
+
+button {
+  color: black;
+  background-color: transparent;
+  font-weight: var(--m);
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem 0.5rem 0.875rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 0.5rem;
+  font-size: var(--sm);
+  transition: all 0.2s ease-in-out;
+  border: solid 1px black;
+}
+button:hover {
+  filter: brightness(110%);
+}
+button svg {
+  stroke: black;
+  width: var(--ism);
+}
+button:hover {
+  background-color: var(--brand);
+  color: white;
+  border: solid 1px var(--brand);
 }/*# sourceMappingURL=base.css.map */

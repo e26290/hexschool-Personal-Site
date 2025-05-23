@@ -246,3 +246,16 @@ footer {
         margin: 1rem 0;
     }
 }
+
+button {
+    @include button(black, transparent, var(--m));
+    font-size: var(--sm);
+    transition: all 0.2s ease-in-out;
+    border: solid 1px black;
+
+    &:hover {
+        background-color: var(--brand);
+        color: white;
+        border: solid 1px var(--brand);
+    }
+}

@@ -15,7 +15,7 @@
 }
 
 // 文字斷行
-@mixin textOver($c:4) {
+@mixin textOver($c: 4) {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
@@ -24,19 +24,20 @@
 }
 
 // 圖片在div內置中
-@mixin imgCover($url, $pos:center) {
+@mixin imgCover($url, $pos: center) {
     background-image: url($url);
     background-position: $pos;
     background-size: cover;
 }
 
 // 按鈕樣式
-@mixin button($fontc, $bgc, $fw:500) {
+@mixin button($fontc, $bgc, $fw: 500) {
     color: $fontc;
     background-color: $bgc;
     font-weight: $fw;
     border-radius: 0.5rem;
     padding: 0.5rem 0.75rem 0.5rem 0.875rem;
+    border: none;
     @include flex($g: 0.5rem);
 
     &:hover {
