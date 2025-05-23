@@ -55,13 +55,18 @@ header .nav {
     }
 }
 
-#cta-container .cta {
-    @include flex($j: space-between);
+#cta-container {
+    border-top: solid 1px black;
 
-    .mail {
-        display: block;
+    .cta {
+        @include flex($j: space-between);
+
+        .mail {
+            display: block;
+        }
     }
 }
+
 
 .cta-media {
     @include flex($g: 0.5rem);
@@ -79,7 +84,6 @@ header .nav {
 
 footer {
     padding: 1rem 0;
-    border-top: solid 1px black;
 
     p {
         text-align: center;
@@ -147,5 +151,63 @@ footer {
             min-height: 200px;
             justify-content: flex-start;
         }
+    }
+}
+
+.blog-slide {
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;
+    overflow: hidden;
+
+    .blog-content {
+        @include flex($j: center, $a: center);
+    }
+
+    .text {
+        max-width: 640px;
+        padding: 3rem;
+    }
+
+    @include breakpoint(576px) {
+        .text {
+            padding: 3rem 0.75rem;
+        }
+    }
+
+    .tag {
+        @include flex($j: flex-start, $a: center, $g: 0.5rem);
+        margin-bottom: 10px;
+
+        span {
+            font-size: var(--lg);
+            font-weight: var(--m);
+            color: var(--brand);
+        }
+
+        .tag-state {
+            font-size: var(--sm);
+            font-weight: var(--m);
+            color: white;
+            background-color: var(--brand);
+            padding: 0.25rem 0.875rem;
+            border-radius: 2rem;
+            white-space: nowrap;
+        }
+    }
+
+    @include breakpoint(1024px) {
+        .tag {
+            height: 45px;
+            line-height: 120%;
+        }
+    }
+
+    .text h3 {
+        font-weight: var(--b);
+    }
+
+    .text p {
+        display: -webkit-box;
+        margin: 1rem 0;
     }
 }

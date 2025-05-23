@@ -68,7 +68,6 @@
   align-items: center;
   flex-direction: row;
   gap: 1.5rem;
-  border-bottom: solid 1px black;
 }
 .warp .content {
   display: flex;

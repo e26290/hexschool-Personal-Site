@@ -67,7 +67,6 @@
 
 .warp {
     @include flex;
-    border-bottom: solid 1px black;
 
     .content {
         @include flex($a: stretch, $g: 3rem, $d: column);

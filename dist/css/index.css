@@ -319,6 +319,9 @@
   outline: none;
 }
 
+.contact-me {
+  border-bottom: solid 1px black;
+}
 .contact-me .list {
   padding: 1.5rem;
   display: flex;

@@ -346,6 +346,8 @@
 }
 
 .contact-me {
+    border-bottom: solid 1px black;
+
     .list {
         padding: 1.5rem;
         @include flex($j: space-between, $g: 0.5rem);
