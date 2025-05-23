@@ -146,10 +146,45 @@ footer {
         opacity: 0.1;
     }
 
+    .about {
+        @include flex($a: flex-start, $d: column, $g: 0.875rem);
+        position: absolute;
+        right: 2.5rem;
+        bottom: -5rem;
+        z-index: 99;
+        background-color: white;
+        padding: 0;
+        padding: 3rem 2rem;
+        box-shadow: 0 0 12px 0 rgba(#000, 0.1);
+    }
+
+    @include breakpoint(1440px) {
+        .about {
+            bottom: -11rem;
+        }
+    }
+
+    @include breakpoint(1024px) {
+        .about {
+            position: relative;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+
     @include breakpoint(767px) {
         .info {
             min-height: 200px;
             justify-content: flex-start;
+        }
+
+        .about {
+            position: relative;
+            left: 50%;
+            bottom: 0;
+            width: 90%;
+            transform: translate(-50%, -50px);
         }
     }
 }
