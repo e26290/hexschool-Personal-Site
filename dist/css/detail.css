@@ -130,6 +130,9 @@
   width: 100%;
   font-weight: var(--b);
 }
+.warp .content .more-blog {
+  color: black;
+}
 .warp .content .btns {
   display: flex;
   justify-content: space-between;

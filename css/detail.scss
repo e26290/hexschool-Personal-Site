@@ -87,8 +87,6 @@
             height: auto;
         }
 
-        
-
         .group {
             @include flex($a: flex-start, $g: 1rem, $d: column);
             margin: 1.5rem 0;
@@ -117,12 +115,17 @@
                 top: 0;
             }
         }
+
         .tips {
             padding: 1.5rem;
             border-radius: 1rem;
             background-color: var(--natural-95);
             width: 100%;
             font-weight: var(--b);
+        }
+
+        .more-blog {
+            color: black;
         }
 
         .btns {
