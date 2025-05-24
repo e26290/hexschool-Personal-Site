@@ -73,6 +73,15 @@ header .nav .nav-item svg {
 #cta-container .cta .mail {
   display: block;
 }
+@media (max-width: 768px) {
+  #cta-container .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
 
 .cta-media {
   display: flex;

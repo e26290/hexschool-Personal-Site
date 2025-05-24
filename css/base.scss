@@ -65,6 +65,13 @@ header .nav {
             display: block;
         }
     }
+
+    @include breakpoint(768px) {
+        .cta {
+            @include flex($j: center, $a: center, $d: column);
+            // gap: 1rem;
+        }
+    }
 }
 
 
