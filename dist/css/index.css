@@ -108,41 +108,41 @@
   color: white;
 }
 
-#blog-carousel {
+.blog-carousel {
   border-top: solid 1px black;
   border-bottom: solid 1px black;
 }
-#blog-carousel .slider-container {
+.blog-carousel .slider-container {
   width: 100%;
 }
-#blog-carousel .slick-slider .slick-list {
+.blog-carousel .slick-slider .slick-list {
   transform: translateX(12px);
 }
-#blog-carousel .slide {
+.blog-carousel .slide {
   background-color: #f0f0f0;
   text-align: center;
   margin-left: 1.5rem;
 }
-#blog-carousel .slide:first-child {
+.blog-carousel .slide:first-child {
   margin-left: 0;
 }
 @media (max-width: 576px) {
-  #blog-carousel .slick-slider .slick-list {
+  .blog-carousel .slick-slider .slick-list {
     transform: translateX(0);
   }
-  #blog-carousel .slide {
+  .blog-carousel .slide {
     margin-left: 0.75rem;
   }
 }
-#blog-carousel .slide img {
+.blog-carousel .slide img {
   width: 100%;
   height: auto;
 }
-#blog-carousel .slide .text {
+.blog-carousel .slide .text {
   padding: 20px;
   text-align: left;
 }
-#blog-carousel .slide .tag {
+.blog-carousel .slide .tag {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -150,12 +150,12 @@
   gap: 0.5rem;
   margin-bottom: 10px;
 }
-#blog-carousel .slide .tag span {
+.blog-carousel .slide .tag span {
   font-size: var(--lg);
   font-weight: var(--m);
   color: var(--brand);
 }
-#blog-carousel .slide .tag .tag-state {
+.blog-carousel .slide .tag .tag-state {
   font-size: var(--sm);
   font-weight: var(--m);
   color: white;
@@ -165,21 +165,21 @@
   white-space: nowrap;
 }
 @media (max-width: 1024px) {
-  #blog-carousel .slide .tag {
+  .blog-carousel .slide .tag {
     height: 45px;
     line-height: 120%;
   }
 }
-#blog-carousel .slick-next {
+.blog-carousel .slick-next {
   right: -20px;
   z-index: 9;
 }
-#blog-carousel .slick-prev {
+.blog-carousel .slick-prev {
   left: -48px;
   z-index: 9;
 }
-#blog-carousel .slick-prev:before,
-#blog-carousel .slick-next:before {
+.blog-carousel .slick-prev:before,
+.blog-carousel .slick-next:before {
   font-family: "slick";
   font-size: 1.5rem;
   color: white;
@@ -189,20 +189,20 @@
   border-radius: 50%;
   padding: 0.75rem;
 }
-#blog-carousel .slick-prev:before {
+.blog-carousel .slick-prev:before {
   content: "⭠";
 }
-#blog-carousel .slick-next:before {
+.blog-carousel .slick-next:before {
   content: "⭢";
 }
-#blog-carousel .slide .text h3 {
+.blog-carousel .slide .text h3 {
   font-weight: var(--b);
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-#blog-carousel .slide .text p {
+.blog-carousel .slide .text p {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
