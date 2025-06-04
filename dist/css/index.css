@@ -181,7 +181,7 @@
 .blog-carousel .slick-prev:before,
 .blog-carousel .slick-next:before {
   font-family: "slick";
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
