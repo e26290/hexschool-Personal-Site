@@ -149,6 +149,6 @@
   border-radius: 4px;
   box-shadow: 0 1px 0 var(--natural-75);
 }
-.warp #food-image {
+.warp img.food-image {
   width: 50%;
 }/*# sourceMappingURL=detail.css.map */

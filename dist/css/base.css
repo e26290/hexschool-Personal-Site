@@ -60,21 +60,21 @@ header .nav .nav-item svg {
   width: var(--ism);
 }
 
-#cta-container {
+.cta-container {
   border-top: solid 1px black;
 }
-#cta-container .cta {
+.cta-container .cta {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: row;
   gap: 1.5rem;
 }
-#cta-container .cta .mail {
+.cta-container .cta .mail {
   display: block;
 }
 @media (max-width: 768px) {
-  #cta-container .cta {
+  .cta-container .cta {
     display: flex;
     justify-content: center;
     align-items: center;
